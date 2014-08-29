@@ -1,4 +1,4 @@
-.rainbow {
+#rainbow {
   -webkit-animation: color-change 30000ms infinite;
   -moz-animation: color-change 30000ms infinite;
   -o-animation: color-change 30000ms infinite;
