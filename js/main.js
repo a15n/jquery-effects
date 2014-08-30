@@ -1,25 +1,28 @@
 'use strict';
 
 function reset() {
-	setTimeout(function(){
-		$('#target').removeAttr('style');
-	}, 500);
+  setTimeout(function() {
+    $('#target').removeAttr('style');
+  }, 500);
+}
+
+function arrayToObject(inputArray) {
+  var properties = {};
+  for (var i = 0; i < inputArray.length; i+=2) {
+		properties[inputArray[i]] = inputArray[i + 1];
+  }
+  return properties;
 }
 
 
 $(document).ready(function() {
 
-	$('select').prop('selectedIndex', -1)
+  $('select').prop('selectedIndex', -1)
 
-	$('select').on('change', function() {
-		var value = $('select').val();
-		var action = value.split(' ')[0];
-		var amount = value.split(' ')[1];
-		var time = value.split(' ')[2];
-
-		var properties = {};
-		properties[action] = amount;
-
-		$('#target').animate(properties, time || 2000, reset);
-	});
+  $('select').on('change', function() {
+    var valueArray = $('select').val().split(':');
+    var properties = arrayToObject(valueArray);
+    console.log(properties);
+    $('#target').animate(properties, 2000, reset);
+  });
 });

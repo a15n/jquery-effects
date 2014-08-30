@@ -1,7 +1,7 @@
 {
-  "name": "node-scaffold",
+  "name": "jquery effects",
   "version": "0.1.0",
-  "description": "A boilerplate node, express, grunt app deployable on Heroku",
+  "description": "look at all the jquery effects",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"

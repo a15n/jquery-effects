@@ -8,11 +8,17 @@ h1 {
   font-size: 100px;
 }
 
-.inner-container {
-  text-align: center
+.container {
+  height: 200px;
+}
+
+#target {
+  text-align: center;
+  position: relative;
 }
 
 .rainbow {
+  border: 0 solid black;
   -webkit-animation: color-change $transition infinite;
   -moz-animation: color-change $transition infinite;
   -o-animation: color-change $transition infinite;
