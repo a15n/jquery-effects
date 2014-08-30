@@ -34,8 +34,7 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'dist/js/main.js',
-          'dist/js/secondary.js'
+          'dist/js/main.js'
         ],
         dest: 'dist/js/final.js'
       }
@@ -60,7 +59,7 @@ module.exports = function(grunt) {
       main: {
         files: [{
           expand: true,
-          src: ['**', '!**/node_modules/**', '!**/dist/**', '!Gruntfile.js', '!README.md'],
+          src: ['**', '!**/node_modules/**', '!**/dist/**', '!Gruntfile.js', '!README.md', '!assets'],
           dest: 'dist/'
         }, ]
       }
@@ -69,7 +68,7 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          'dist/css/final.css': ['dist/css/final.css']
+          'dist/css/final.css': ['dist/css/final.css','bootstrap.min.css']
         }
       }
     },

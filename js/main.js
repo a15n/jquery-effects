@@ -2,8 +2,8 @@
 
 function reset() {
 	setTimeout(function(){
-		$('.target').removeAttr('style');
-	}, 500)
+		$('#target').removeAttr('style');
+	}, 500);
 }
 
 
