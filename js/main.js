@@ -17,12 +17,12 @@ function arrayToObject(inputArray) {
 
 $(document).ready(function() {
 
-  // $('select').prop('selectedIndex', -1);
-
+  $('select').prop('selectedIndex', -1);
   $('select').on('change', function() {
+    var optGroup = $('select :selected').parent().attr('label');
     var valueArray = $('select').val().split(':');
     var properties = arrayToObject(valueArray);
-    $('#target').animate(properties, 2000, reset)
+    $('#target').animate(properties, 2000, reset);
   });
 
 });

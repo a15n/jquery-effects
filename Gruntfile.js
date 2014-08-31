@@ -25,7 +25,7 @@ module.exports = function(grunt) {
         files: [{
           dot: true,
           src: [
-            'dist/css/main.css', 'dist/css/main.scss', 'dist/css/normalize.css', 'dist/js/main.js', 'dist/js/secondary.js'
+            'dist/css/main.css', 'dist/css/main.scss', 'dist/css/normalize.css', 'dist/css/bootstrap.min.css', 'dist/js/main.js', 'dist/js/secondary.js'
           ]
         }]
       }
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
       main: {
         files: [{
           expand: true,
-          src: ['**', '!**/node_modules/**', '!**/dist/**', '!Gruntfile.js', '!README.md', '!assets'],
+          src: ['**', '!**/node_modules/**', '!**/dist/**', '!Gruntfile.js', '!README.md', '!**/assets/**'],
           dest: 'dist/'
         }, ]
       }

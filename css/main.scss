@@ -1,5 +1,3 @@
-$transition: 30000ms;
-
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -9,13 +7,9 @@ h1 {
 }
 
 select {
-  max-width: 200px;
   float: none;
   margin: 0 auto;
-}
-
-.row {
-  display: block !important;
+  max-width: 250px;
 }
 
 .container {
@@ -24,7 +18,6 @@ select {
 }
 
 #target {
-
   position: relative;
 }
 
@@ -51,6 +44,8 @@ select {
 @keyframes color-change {
   @include rainbowMaker();
 }
+
+$transition: 30000ms;
 
 .rainbow {
   border: 0 solid black;
