@@ -19,14 +19,7 @@ select {
 #target {
   position: relative; }
 
-.rainbow {
-  border: 0 solid black;
-  -webkit-animation: color-change 30000ms infinite;
-  -moz-animation: color-change 30000ms infinite;
-  -o-animation: color-change 30000ms infinite;
-  -ms-animation: color-change 30000ms infinite;
-  animation: color-change 30000ms infinite; }
-
+/*Rainbow Magic!*/
 @-webkit-keyframes color-change {
   1% {
     color: #ff1100; }
@@ -1527,3 +1520,10 @@ select {
 
   100% {
     color: red; } }
+.rainbow {
+  border: 0 solid black;
+  -webkit-animation: color-change 30000ms infinite;
+  -moz-animation: color-change 30000ms infinite;
+  -o-animation: color-change 30000ms infinite;
+  -ms-animation: color-change 30000ms infinite;
+  animation: color-change 30000ms infinite; }

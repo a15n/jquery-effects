@@ -28,6 +28,30 @@ select {
   position: relative;
 }
 
+/*Rainbow Magic!*/
+@mixin rainbowMaker() {
+  @for $i from 1 through 100 {
+    #{percentage($i / 100)} { color: hsl(round((360 * $i / 100)), 100%, 50%);}
+  }
+}
+
+@-webkit-keyframes color-change {
+  @include rainbowMaker();
+}
+
+@-moz-keyframes color-change {
+  @include rainbowMaker();
+}
+@-ms-keyframes color-change {
+  @include rainbowMaker();
+}
+@-o-keyframes color-change {
+  @include rainbowMaker();
+}
+@keyframes color-change {
+  @include rainbowMaker();
+}
+
 .rainbow {
   border: 0 solid black;
   -webkit-animation: color-change $transition infinite;
@@ -37,29 +61,3 @@ select {
   animation: color-change $transition infinite;
 }
 
-@-webkit-keyframes color-change {
-  @for $i from 1 through 100 {
-    #{percentage($i / 100)} { color: hsl(round((360 * $i / 100)), 100%, 50%);}
-  }
-}
-
-@-moz-keyframes color-change {
-  @for $i from 1 through 100 {
-    #{percentage($i / 100)} { color: hsl(round((360 * $i / 100)), 100%, 50%);}
-  }
-}
-@-ms-keyframes color-change {
-  @for $i from 1 through 100 {
-    #{percentage($i / 100)} { color: hsl(round((360 * $i / 100)), 100%, 50%);}
-  }
-}
-@-o-keyframes color-change {
-  @for $i from 1 through 100 {
-    #{percentage($i / 100)} { color: hsl(round((360 * $i / 100)), 100%, 50%);}
-  }
-}
-@keyframes color-change {
-  @for $i from 1 through 100 {
-    #{percentage($i / 100)} { color: hsl(round((360 * $i / 100)), 100%, 50%);}
-  }
-}
