@@ -8,12 +8,23 @@ h1 {
   font-size: 100px;
 }
 
+select {
+  max-width: 200px;
+  float: none;
+  margin: 0 auto;
+}
+
+.row {
+  display: block !important;
+}
+
 .container {
   height: 200px;
+  text-align: center;
 }
 
 #target {
-  text-align: center;
+
   position: relative;
 }
 

@@ -6,7 +6,7 @@
   <title>jquery effects</title>
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
   <!-- build:css css/final.css-->
   <link rel="stylesheet" href="css/normalize.css">
@@ -22,7 +22,7 @@
 
     <br>
     <br>
-    <select>
+    <select class="form-control">
       <optgroup label="basic">
         <option value="fontSize:+=50px">grow</option>
         <option value="fontSize:-=50px">shrink</option>
@@ -31,19 +31,19 @@
         <option value="opacity:0">hide</option>
         <option value="letterSpacing:25px">letter spacing</option>
         <option value="borderWidth:10px">add border</option>
-        <option value="fontSize:+=50px:left:-250px">multiple</option>
       </optgroup>
 
       <optgroup label="multiple">
-        <option value="fontSize:+=50px:left:-250px">multiple</option>
+        <option value="top:100px:left:250px">bottom and right</option>
+        <option value="fontSize:+=50px:opacity:0">grow and hide</option>
+        <option value="borderWidth:10px:fontSize:-=50px">border and shrink</option>
       </optgroup>
     </select>
     <br>
     <br>
-      <h1 class="rainbow" id="target">
-        jQuery effects
-      </h1>
-    <br>
+    <h1 class="rainbow" id="target">
+      jQuery effects
+    </h1>
 
   </div>
 

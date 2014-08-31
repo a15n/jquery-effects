@@ -8,8 +8,8 @@ function reset() {
 
 function arrayToObject(inputArray) {
   var properties = {};
-  for (var i = 0; i < inputArray.length; i+=2) {
-		properties[inputArray[i]] = inputArray[i + 1];
+  for (var i = 0; i < inputArray.length; i += 2) {
+    properties[inputArray[i]] = inputArray[i + 1];
   }
   return properties;
 }
@@ -17,12 +17,12 @@ function arrayToObject(inputArray) {
 
 $(document).ready(function() {
 
-  $('select').prop('selectedIndex', -1)
+  // $('select').prop('selectedIndex', -1);
 
   $('select').on('change', function() {
     var valueArray = $('select').val().split(':');
     var properties = arrayToObject(valueArray);
-    console.log(properties);
-    $('#target').animate(properties, 2000, reset);
+    $('#target').animate(properties, 2000, reset)
   });
+
 });
